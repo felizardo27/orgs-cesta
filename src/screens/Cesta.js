@@ -53,7 +53,7 @@ const styles = StyleSheet.create({
         color: '#464646',
         fontSize: 26,
         lineHeight: 42,
-        fontWeight: 'bold'
+        fontFamily: 'MontserratBold',
     },
     fazendaView: {
         flexDirection: 'row',
@@ -66,7 +66,8 @@ const styles = StyleSheet.create({
     nomeFazenda: {
         fontSize: 16,
         lineHeight: 26,
-        marginLeft: 12
+        marginLeft: 12,
+        fontFamily: 'MontserratRegular'
     },
     descricao: {
         color: '#A3A3A3',
