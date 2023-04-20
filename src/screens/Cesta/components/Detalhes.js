@@ -1,5 +1,6 @@
 import React from "react";
 import Texto from "../../../components/Texto";
+import Botao from '../../../components/Botao'
 import { StyleSheet, View } from "react-native";
 import { Image } from "react-native";
 
@@ -8,7 +9,8 @@ export default function Detalhes({
         imagemFazenda, 
         nomeFazenda, 
         descricao, 
-        preco 
+        preco,
+        botao 
     }){
     return(
         <>
@@ -25,6 +27,7 @@ export default function Detalhes({
             <Texto style={styles.preco}>
                 { preco }
             </Texto>
+            <Botao>{ botao }</Botao>
         </>
     )
 }

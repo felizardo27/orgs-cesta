@@ -4,7 +4,7 @@ import { StyleSheet, Text } from 'react-native'
 export default function Texto({ children, style }) {
 
     let stylesDefault = styles.texto
-    if (style.fontWeight === 'bold') {
+    if (style?.fontWeight === 'bold') {
         stylesDefault = styles.textoBold;
     }
 
