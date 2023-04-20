@@ -1,23 +1,13 @@
-import React from 'react'
-import { Image, StyleSheet, Dimensions, Text, View } from 'react-native'
+import React from "react";
+import Texto from "../../../components/Texto";
+import { StyleSheet, View } from "react-native";
+import logo from '../../../../assets/logo.png'
+import { Image } from "react-native";
 
-import topo from '../../assets/topo.png'
-import logo from '../../assets/logo.png'
-import Texto from '../components/Texto'
-
-const width = Dimensions.get('screen').width
-
-export default function Cesta(){
+export default function Detalhes(){
     return(
         <>
-            <Image 
-                source={topo} 
-                style={styles.topo}
-            />
-            <Texto style={styles.titulo}>Detalhes da cesta</Texto>
-
-            <View style={styles.cestaView}>
-                <Texto style={styles.nome}>Cesta de verduras</Texto>
+            <Texto style={styles.nome}>Cesta de verduras</Texto>
                 <View style={styles.fazendaView}>
                     <Image source={logo} style={styles.imagemFazenda}/>
                     <Texto style={styles.nomeFazenda}>Jenny Jack Farm</Texto>
@@ -25,31 +15,12 @@ export default function Cesta(){
                 <Texto style={styles.descricao}>
                     Uma cesta com produtos selecionados cuidadosamente da fazendo direto para a sua cozinha
                 </Texto>
-                <Texto style={styles.preco}>R$ 40,00</Texto>
-            </View>
+            <Texto style={styles.preco}>R$ 40,00</Texto>
         </>
     )
 }
 
 const styles = StyleSheet.create({
-    topo: {
-        width: '100%',
-        height: 578 / 768 * width
-    },
-    titulo: {
-        width: '100%',
-        position: 'absolute',
-        textAlign: 'center',
-        fontSize: 18,
-        lineHeight: 26,
-        color: 'white',
-        fontWeight: 'bold',
-        padding: 16
-    },
-    cestaView: {
-        paddingVertical: 8,
-        paddingHorizontal: 16
-    },
     nome: {
         color: '#464646',
         fontSize: 26,
